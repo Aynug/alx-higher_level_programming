@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for k in range(ord('z'), ord('a') - 1, -2):
-    print("{:k}{:s}".format(k, chr(k - 33)), end="")
+j = 0
+for k in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(k - j)), end="")
+    j = 32 if j == 0 else 0
