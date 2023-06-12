@@ -2,8 +2,10 @@
 # 4-hidden_discovery.py
 
 if __name__ == "__main__":
-     import hidden_4
+    import hidden_4
 
-    for name in dir(hidden_4):
-    if name[0:2] != "__":
-    print("{:d}".format(name))
+    hidden_discovery = dir(hidden_4)
+
+    for j in range(len(hidden_discovery)):
+    if hidden_discovery[j][0] != '_' and hidden_discovery[j][1] != '_':
+    print(hidden_discovery[j])
